@@ -1,0 +1,4 @@
+# Secrets en la raíz del monorepo (usar walkies/.env para la app)
+.env
+.env.*
+!.env.example
