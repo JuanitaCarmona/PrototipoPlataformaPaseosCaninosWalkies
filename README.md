@@ -1,15 +1,24 @@
-=========================================================================
+================================================================================
                               WALKIES
            Aplicacion movil para agendar y gestionar paseos de mascotas
-=========================================================================
+================================================================================
 
 1. DESCRIPCION GENERAL
 ----------------------
-Walkies es una aplicacion movil para conectar propietarios de mascotas con paseadores. El propietario registra sus mascotas, elige un paseador, define el punto de recogida y agenda el servicio. El paseador recibe la solicitud, la confirma, la inicia y la marca como completada.
+Walkies es una aplicacion movil para conectar propietarios de mascotas con
+paseadores. El propietario registra sus mascotas, elige un paseador, define
+el punto de recogida y agenda el servicio. El paseador recibe la solicitud,
+la confirma, la inicia y la marca como completada.
 
-El rol se elige al crear la cuenta y no cambia despues: propietario (owner) o paseador (walker). Cada rol ve una interfaz distinta. El pago no se cobra dentro de la aplicacion: el valor se acuerda en efectivo al entregar la mascota. La tarifa que muestra la app es una referencia calculada con la tarifa por hora del paseador y la duracion del paseo.
+El rol se elige al crear la cuenta y no cambia despues: propietario (owner)
+o paseador (walker). Cada rol ve una interfaz distinta. El pago no se cobra
+dentro de la aplicacion: el valor se acuerda en efectivo al entregar la
+mascota. La tarifa que muestra la app es una referencia calculada con la
+tarifa por hora del paseador y la duracion del paseo.
 
-La aplicacion es el cliente. Supabase es el backend: autenticacion, base de datos PostgreSQL, politicas de acceso (RLS) y almacenamiento de fotos. No hay un servidor propio ni una API escrita en este repositorio.
+La aplicacion es el cliente. Supabase es el backend: autenticacion, base de
+datos PostgreSQL, politicas de acceso (RLS) y almacenamiento de fotos. No
+hay un servidor propio ni una API escrita en este repositorio.
 
 
 2. ARQUITECTURA Y ESTRUCTURA DE CARPETAS
@@ -298,7 +307,7 @@ Paso 3: Configurar variables de entorno
 
   Contenido de .env:
 
-    EXPO_PUBLIC_SUPABASE_URL=
+    EXPO_PUBLIC_SUPABASE_URL=https://tu-proyecto.supabase.co
     EXPO_PUBLIC_SUPABASE_ANON_KEY=tu_clave_anon
     GOOGLE_MAPS_ANDROID_API_KEY=
 
@@ -472,7 +481,7 @@ Filtros del listado de paseadores (propietario):
     al paquete de la aplicacion firmada.
 
 
-=========================================================================
+================================================================================
   Desarrollado como proyecto de grado - 2026
   Stack: Expo 54 + React Native + TypeScript + Supabase
-=========================================================================
+================================================================================
